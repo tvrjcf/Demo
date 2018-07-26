@@ -1,0 +1,13 @@
+ILMerge 是微软提供的用于 将一个或多个引用dll 和 可执行文件exe 合并成一个exe文件 的工具。
+
+
+此工具是命令行工具， 用法:
+
+ - 打开 start.bat , 将  CodeToHelp.exe Lib.dll 分别改为exe文件和dll文件位置
+
+ - 运行 start.bat
+
+ - 生成的 new.exe 即合并的程序
+
+
+[注: DOS 下超过6位长度的路径需要用 ~1 代替超出的字节。]

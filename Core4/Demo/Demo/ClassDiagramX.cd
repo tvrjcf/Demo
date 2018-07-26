@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Py.Algorithm.Crc32" Collapsed="true">
+    <Position X="41.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Algorithm.Encryption" Collapsed="true">
+    <Position X="50" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Algorithm.Enumerator" Collapsed="true">
+    <Position X="36" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Algorithm.Searcher" Collapsed="true">
+    <Position X="39.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Algorithm.Sorter" Collapsed="true">
+    <Position X="46.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Collections.TreeNode&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Collections.TreeNodeList&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.Collection&lt;T&gt;" Collapsed="true">
+    <Position X="25.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.Dictionary&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="22.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.EntryCollection&lt;TOwner, T&gt;" Collapsed="true">
+    <Position X="24.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.OwnedCollection&lt;TOwner, T&gt;" Collapsed="true">
+    <Position X="26.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.OwnedDictionary&lt;TOwner, TKey, TValue&gt;" Collapsed="true">
+    <Position X="21.5" Y="23.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Collections.ObjectModel.TinyDictionary&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="0.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Core.ArrayString" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Core.Check" Collapsed="true">
+    <Position X="36" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.CancelableEventArgs" Collapsed="true">
+    <Position X="5.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.ErrorEventArgs" Collapsed="true">
+    <Position X="7.5" Y="18" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.ValueChangedEventArgs&lt;T&gt;" Collapsed="true">
+    <Position X="9.75" Y="18" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.SyntaxException" Collapsed="true">
+    <Position X="3.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Number" Collapsed="true">
+    <Position X="36" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.PagerInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Core.QC" Collapsed="true">
+    <Position X="44.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Rand" Collapsed="true">
+    <Position X="46.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.RegExp" Collapsed="true">
+    <Position X="36" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Scanner" Collapsed="true">
+    <Position X="37.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Str" Collapsed="true">
+    <Position X="50" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.StringConverter" Collapsed="true">
+    <Position X="0.5" Y="21.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.StringHelper" Collapsed="true">
+    <Position X="15" Y="19.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Core.Until" Collapsed="true">
+    <Position X="48.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.FileHelper" Collapsed="true">
+    <Position X="39.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Base.AssembyInfo" Collapsed="true">
+    <Position X="41.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Base.FileBase" Collapsed="true">
+    <Position X="11" Y="21.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Core.Base.HelperBase" Collapsed="true">
+    <Position X="17.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Base.StreamFileBase" Collapsed="true">
+    <Position X="8.75" Y="22.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Core.Base.TextFileBase" Collapsed="true">
+    <Position X="11" Y="22.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Drawing.CaptchaHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Drawing.ImageFile" Collapsed="true">
+    <Position X="13.25" Y="22.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlAnchorElement" Collapsed="true">
+    <Position X="29" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlAttribute" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlAttributeCollection" Collapsed="true">
+    <Position X="18.75" Y="23.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlCDataSection" Collapsed="true">
+    <Position X="15.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlCharacterData" Collapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlComment" Collapsed="true">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlDocument" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlDocumentFragment" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlDocumentType" Collapsed="true">
+    <Position X="17.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlElement" Collapsed="true">
+    <Position X="26.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlException" Collapsed="true">
+    <Position X="3.5" Y="27" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlFormElement" Collapsed="true">
+    <Position X="24.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlImageElement" Collapsed="true">
+    <Position X="31.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlInputElement" Collapsed="true">
+    <Position X="33.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlLinkedNode" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlNamedNodeMap&lt;TNode&gt;" Collapsed="true">
+    <Position X="17.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlNamedNodeMap" Collapsed="true">
+    <Position X="16.5" Y="23.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlNameTable" Collapsed="true">
+    <Position X="13.5" Y="24.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlNode" Collapsed="true">
+    <Position X="17.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlNodeChangedEventArgs" Collapsed="true">
+    <Position X="36" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlNodeList" Collapsed="true">
+    <Position X="23.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlOptionElement" Collapsed="true">
+    <Position X="20" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlProcessingInstruction" Collapsed="true">
+    <Position X="11" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlSelectElement" Collapsed="true">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlText" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlTextareaElement" Collapsed="true">
+    <Position X="26.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlReader" Collapsed="true">
+    <Position X="24.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Html.HtmlReaderSettings" Collapsed="true">
+    <Position X="37.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.HtmlTextReader" Collapsed="true">
+    <Position X="24.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Html.NameTable" Collapsed="true">
+    <Position X="13.5" Y="25.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.IO.CountingStream" Collapsed="true">
+    <Position X="37.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.IO.StreamBuffer" Collapsed="true">
+    <Position X="3.5" Y="24" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.IO.StreamHelper" Collapsed="true">
+    <Position X="36" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.IO.StringBuffer" Collapsed="true">
+    <Position X="5.75" Y="24" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.IO.TextBuffer" Collapsed="true">
+    <Position X="4.75" Y="22.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.IO.FileExistsException" Collapsed="true">
+    <Position X="37.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonExpression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Json.JsonArray" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Json.JsonException" Collapsed="true">
+    <Position X="21.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonSyntaxException" Collapsed="true">
+    <Position X="20.5" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonSerializerException" Collapsed="true">
+    <Position X="22.75" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonObject" Collapsed="true">
+    <Position X="23.75" Y="23.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonReaderSettings" Collapsed="true">
+    <Position X="39.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonReader" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonTextReader" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonValue&lt;T&gt;" Collapsed="true">
+    <Position X="17.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonString" Collapsed="true">
+    <Position X="12.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonBoolean" Collapsed="true">
+    <Position X="15" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonInt" Collapsed="true">
+    <Position X="17.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonDouble" Collapsed="true">
+    <Position X="19.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonValue" Collapsed="true">
+    <Position X="21.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonWriterSettings" Collapsed="true">
+    <Position X="41.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Json.JsonWriter" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Json.JsonTextWriter" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.ConsoleLogListener" Collapsed="true">
+    <Position X="12.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.DatabaseLogListener" Collapsed="true">
+    <Position X="19.25" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.DebugWindowLogListener" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.FileLogListener" Collapsed="true">
+    <Position X="10.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Logging.FilterLogListener" Collapsed="true">
+    <Position X="1.25" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.HtmlLogStringConverter" Collapsed="true">
+    <Position X="0.5" Y="24.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.LogEntry" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Logging.Logger" Collapsed="true">
+    <Position X="44.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.LoggingStringConverter" Collapsed="true">
+    <Position X="0.5" Y="23.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.LogListener" Collapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Logging.MultiLogListener" Collapsed="true">
+    <Position X="3.5" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.ResponseLogListener" Collapsed="true">
+    <Position X="8" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.StreamLogListener" Collapsed="true">
+    <Position X="10.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Logging.TextLogListener" Collapsed="true">
+    <Position X="11.5" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.WebFormControlLogListener" Collapsed="true">
+    <Position X="14.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Logging.WinFormControlLogListener" Collapsed="true">
+    <Position X="17" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Net.FtpClient" Collapsed="true">
+    <Position X="12.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Net.NetClient" Collapsed="true">
+    <Position X="50" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Net.WebBrowser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.RunTime.Arithmetic" Collapsed="true">
+    <Position X="37.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.RunTime.CString" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.RunTime.Debug" Collapsed="true">
+    <Position X="44.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.RunTime.ReflectionHelper" Collapsed="true">
+    <Position X="50" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.RunTime.SerializationHelper" Collapsed="true">
+    <Position X="41.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.RunTime.Thrower" Collapsed="true">
+    <Position X="37.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Sql.DbHelper" Collapsed="true">
+    <Position X="19.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Sql.OdbcHelper" Collapsed="true">
+    <Position X="17.25" Y="21.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Sql.OleDbHelper" Collapsed="true">
+    <Position X="19.5" Y="21.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Sql.SqlHelper" Collapsed="true">
+    <Position X="21.75" Y="21.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Text.IniFile" Collapsed="true">
+    <Position X="11" Y="24.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Web.Binder" Collapsed="true">
+    <Position X="44.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Web.CacheStrategy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Web.Server" Collapsed="true">
+    <Position X="43" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Web.Vistor" Collapsed="true">
+    <Position X="46.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.Binder" Collapsed="true">
+    <Position X="46.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.CPUInfo" Collapsed="true">
+    <Position X="39.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.FormHelper" Collapsed="true">
+    <Position X="41.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.Hook" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Windows.Hotkey" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Windows.Ime" Collapsed="true">
+    <Position X="41.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.MemoryInfo" Collapsed="true">
+    <Position X="46.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.IconHelper" Collapsed="true">
+    <Position X="39.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.Win32API" Collapsed="true">
+    <Position X="46.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Windows.Win32Client" Collapsed="true">
+    <Position X="48.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipEntry" Collapsed="true">
+    <Position X="5.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="1.3" Collapsed="true" />
+  </Class>
+  <Class Name="Py.Zip.ZipFileEntry" Collapsed="true">
+    <Position X="3" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipFileSystemEntry" Collapsed="true">
+    <Position X="5.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipJitStreamEntry" Collapsed="true">
+    <Position X="7.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipStreamEntry" Collapsed="true">
+    <Position X="9.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipWriteDelegateEntry" Collapsed="true">
+    <Position X="0.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ProgressChangedEventArgs" Collapsed="true">
+    <Position X="3" Y="18" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.StartProgressChangedEventArgs" Collapsed="true">
+    <Position X="0.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.CompleteProgressChangedEventArgs" Collapsed="true">
+    <Position X="3" Y="19.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.EntryProcessingEventArgs" Collapsed="true">
+    <Position X="5.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.BlockWritenEventArgs" Collapsed="true">
+    <Position X="5.25" Y="20.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.EntryEventArgs" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.EntryExistedEventArgs" Collapsed="true">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ErrorEventArgs" Collapsed="true">
+    <Position X="2.75" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.BadPasswordException" Collapsed="true">
+    <Position X="15" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.BadReadException" Collapsed="true">
+    <Position X="17.25" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.BadCrcException" Collapsed="true">
+    <Position X="19.5" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.BadStateException" Collapsed="true">
+    <Position X="12.75" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZipException" Collapsed="true">
+    <Position X="16" Y="15.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.ZippedEntry" Collapsed="true">
+    <Position X="5.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Py.Zip.ZippedFile&lt;TZippedEntry&gt;" Collapsed="true">
+    <Position X="8.75" Y="24.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.Zlib.DeflateStream" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.Zlib.GZipStream" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.Zlib.ParallelDeflateOutputStream" Collapsed="true">
+    <Position X="43" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.Zlib.ZlibException" Collapsed="true">
+    <Position X="43" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.Zlib.Adler" Collapsed="true">
+    <Position X="36" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Py.Zip.Zlib.ZipBaseStream" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="Py.Algorithm.Numerics.BigInteger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Py.Algorithm.Numerics.Complex" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="Py.Drawing.CssSize" Collapsed="true">
+    <Position X="48.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Struct Name="Py.Windows.BlendFunction" Collapsed="true">
+    <Position X="39.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Struct Name="Py.Windows.TrackMouseEvents" Collapsed="true">
+    <Position X="46.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Interface Name="Py.Collections.IEntry" Collapsed="true">
+    <Position X="6.5" Y="25.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Py.Collections.ITreeNode&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="26.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Py.Collections.ITreeNodeList&lt;T&gt;" Collapsed="true">
+    <Position X="41.25" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Py.Html.IHtmlInput" Collapsed="true">
+    <Position X="37.75" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Py.Json.IJsonObject" Collapsed="true">
+    <Position X="44.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Py.Web.ICacheStrategy" Collapsed="true">
+    <Position X="36" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Py.Core.ErrorAction" Collapsed="true">
+    <Position X="41.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Core.FileDataType" Collapsed="true">
+    <Position X="44.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Core.SyntaxErrorType" Collapsed="true">
+    <Position X="43" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Core.FileAction" Collapsed="true">
+    <Position X="43" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Core.OverwriteType" Collapsed="true">
+    <Position X="37.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Core.FileType" Collapsed="true">
+    <Position X="46.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Drawing.CssUnit" Collapsed="true">
+    <Position X="48.25" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Drawing.Position" Collapsed="true">
+    <Position X="41.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Html.HtmlNodeOrder" Collapsed="true">
+    <Position X="41.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Html.HtmlNodeChangedAction" Collapsed="true">
+    <Position X="39.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Html.HtmlNodeType" Collapsed="true">
+    <Position X="43" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Json.ReadState" Collapsed="true">
+    <Position X="44.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Json.Formatting" Collapsed="true">
+    <Position X="50" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Json.WriteState" Collapsed="true">
+    <Position X="36" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Logging.LogLevel" Collapsed="true">
+    <Position X="46.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Logging.LogEventType" Collapsed="true">
+    <Position X="44.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Logging.LogOptions" Collapsed="true">
+    <Position X="48.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Sql.SqlOperation" Collapsed="true">
+    <Position X="37.75" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Sql.Database" Collapsed="true">
+    <Position X="50" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.WindowState" Collapsed="true">
+    <Position X="50" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.RDW" Collapsed="true">
+    <Position X="43" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.SWP" Collapsed="true">
+    <Position X="41.25" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.SMTO" Collapsed="true">
+    <Position X="36" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.DT" Collapsed="true">
+    <Position X="39.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.PM" Collapsed="true">
+    <Position X="39.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.AlphaFlags" Collapsed="true">
+    <Position X="36" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.ULW" Collapsed="true">
+    <Position X="46.5" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.TME" Collapsed="true">
+    <Position X="44.75" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.DCX" Collapsed="true">
+    <Position X="36" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.SM" Collapsed="true">
+    <Position X="50" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.SW" Collapsed="true">
+    <Position X="39.5" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.SB" Collapsed="true">
+    <Position X="48.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.AW" Collapsed="true">
+    <Position X="37.75" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.GW" Collapsed="true">
+    <Position X="36" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.WindowsHook" Collapsed="true">
+    <Position X="48.25" Y="15" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.MouseEventFlag" Collapsed="true">
+    <Position X="36" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.HookCode" Collapsed="true">
+    <Position X="37.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.Modifiers" Collapsed="true">
+    <Position X="50" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Windows.RunMethod" Collapsed="true">
+    <Position X="46.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.ZipEntryTimestamp" Collapsed="true">
+    <Position X="41.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.CompressionMethod" Collapsed="true">
+    <Position X="43" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.ZipEntryEncryptionAlgorithm" Collapsed="true">
+    <Position X="39.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.Zip64Option" Collapsed="true">
+    <Position X="37.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.Zlib.FlushType" Collapsed="true">
+    <Position X="48.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.Zlib.CompressionLevel" Collapsed="true">
+    <Position X="41.25" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.Zlib.CompressionStrategy" Collapsed="true">
+    <Position X="46.5" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.Zlib.CompressionMode" Collapsed="true">
+    <Position X="44.75" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Py.Zip.Zlib.ZipStreamType" Collapsed="true">
+    <Position X="43" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Delegate Name="Py.Core.ValueChangedEventHandler&lt;T&gt;" Collapsed="true">
+    <Position X="44.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Core.ErrorEventHandler" Collapsed="true">
+    <Position X="43" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Core.ErrorEventHandler&lt;T&gt;" Collapsed="true">
+    <Position X="44.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="System.ForEachAction&lt;T&gt;" Collapsed="true">
+    <Position X="46.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="System.EqualityComparison&lt;T&gt;" Collapsed="true">
+    <Position X="41.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="System.GetAction&lt;TResult&gt;" Collapsed="true">
+    <Position X="50" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="System.GetAction&lt;TResult, K&gt;" Collapsed="true">
+    <Position X="36" Y="17.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="System.GetAction&lt;TResult, K, R&gt;" Collapsed="true">
+    <Position X="48.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Html.HtmlNodeChangedEventHandler" Collapsed="true">
+    <Position X="37.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Windows.SendAsyncProc" Collapsed="true">
+    <Position X="43" Y="17.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Zip.ProgressChangedEventHandler" Collapsed="true">
+    <Position X="41.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Zip.EntryEventHandler&lt;T&gt;" Collapsed="true">
+    <Position X="39.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Zip.BlockWritenEventHandler" Collapsed="true">
+    <Position X="36" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Zip.OpenDelegate" Collapsed="true">
+    <Position X="39.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Delegate Name="Py.Zip.EntryDelegate" Collapsed="true">
+    <Position X="37.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier />
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,1 @@
+ILMerge.exe /ndebug /target:winexe /out:new.exe CodeToHelp.exe Lib.dll

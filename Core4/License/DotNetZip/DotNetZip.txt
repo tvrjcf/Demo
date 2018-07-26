@@ -1,0 +1,29 @@
+2010/05/20
+
+
+DotNetZip - Zip and Unzip in C#, VB, any .NET language
+
+
+
+------------------------------------------------------------
+
+DotNetZip is an easy-to-use, FAST, FREE class library and toolset for manipulating zip files or folders. Zip and Unzip is easy: with DotNetZip, .NET applications written in VB, C# - any .NET language - can easily create, read, extract, or update zip files. For Mono or MS .NET.
+
+DotNetZip works on PCs with the full .NET Framework, and also runs on mobile devices that use the .NET Compact Framework. Create and read zip files in VB, C#, or any .NET language, or any scripting environment. DotNetZip supports these scenarios:
+- an ASP.NET app that dynamically creates ZIP files and allows a browser to download them
+- a Windows Service that periodically zips up a directory for backup and archival purposes
+- a WPF program that modifies existing archives - renaming entries, removing entries from an archive, or adding new entries to an archive
+- a Windows Forms app that creates AES-encrypted zip archives for privacy of archived content.
+- An administrative script in PowerShell or VBScript that performs backup and archival.
+- a WCF service that receives a zip file as an attachment, and dynamically unpacks the zip to a stream for analysis
+- an old-school ASP (VBScript) application that produces a ZIP file via the COM interface for DotNetZIp
+- a Windows Forms app that reads or updates ODS files
+- creating zip files from stream content, saving to a stream, extracting to a stream, reading from a stream
+- creation of self-extracting archives.
+
+If all you want is a better DeflateStream or GZipStream class to replace the one that is built-into the .NET BCL, DotNetZip has that, too. DotNetZip's DeflateStream and GZipStream are available in a standalone assembly, based on a .NET port of Zlib. These streams support compression levels and deliver much better performance that the built-in classes. There is also a ZlibStream to complete the set (RFC 1950, 1951, 1952). 
+
+
+
+项目主页：  http://dotnetzip.codeplex.com/
+相关作者：  Cheeso

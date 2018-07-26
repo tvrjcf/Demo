@@ -1,0 +1,175 @@
+
+
+    感谢下载 Py.Core ,您当前下载的版本为:
+
+               Py.Core 4.2.0.1 Debug 版本(完整版)
+
+
+
+
+   ☆ 简单介绍:  
+       Py.Core 是一个用于 .net 平台上的常用基层代码的集合。类库拥有100多个常用类和独立函数，使您在开发时减小对这些公共常用函数的精力花费。Py.Core 是一个免费类库，您可以在任意项目中使用此库而不必担心任何版权问题。
+
+
+   ☆ 功能说明:
+       Py.Core提供了以下的功能:
+
+            - 字符串/日期/数字/正则表达式/文件/数据检查/类型转换 等常见操作。
+
+            - 缩略图/验证码/水印 等图片操作。
+
+            - 排序/搜索/加密/遍历 等常用算法。
+
+            - 日志功能(内置包括向 屏幕、窗口、文件、数据库 输出日志的工具)。
+
+            - HTML/INI/ZIP 压缩/JSON/XML/常用集合 等文件或数据结构的处理。
+
+            - FTP/上传/下载/邮件/登陆网站 等网络功能 。
+
+            - 最完整的数据库操作辅助类 。
+
+            - 对于 C/S 结构，获取 CPU/IME 输入法/Memory 内存 等信息， 简化对 图标/键盘钩子/Win32 API 的操作。
+
+            - 对于 B/S 结构，获取 访客/服务器 等信息， 简化对 B/S 常见的操作。
+
+            - 函数性能测试等辅助工具。
+
+       → 更详细的功能说明，和如何使用这些功能，可以打开 Demo/Demo.sln (Visual Studio 2008 项目文件)解决方案查看功能演示，或翻阅 Help/Core.chm 的帮助文件。
+
+
+   ☆ 如何使用:
+
+       此库可以很方便的引入您的项目并调用， 具体添加步骤为(以 Visual Studio 为例):
+
+            -  在 Visual Studio 新建一个项目。 (.net 2.0 - 3.5)
+
+            -  点击解决方案资源浏览器，右击项目文件夹中的 Bin 或 引用 文件夹。
+
+            -  点击 添加引用... 在对话框中选择浏览。
+
+            -  选择 Core/Core.dll 文件。
+
+      按如上操作后，您可以直接使用 using(C#)/Import(VB.Net) 载入名字空间并使用其中的类。在 Demo/Demo.sln 解决方案中有示例代码。
+
+
+-------------------------------------------------------
+
+
+功能结构
+
+
+
+一、底层代码    Py.Core
+
+1.  字符串形式存储的数组    ArrayString
+2.  数据的检查操作    Check   (如 IsNumber)
+3.  文件辅助     FileHelper
+4.  数字      Number
+5.  快速转换    QC
+6.  随机数/字符串     Rand
+7.  正则     RegExp
+8.  读取字符串或控制台的工具    Scanner
+9.  字符串    Str
+10. 常用函数      Util
+11. 处理字符串      StringHelper
+
+
+二、绘图     Py.Drawing
+
+1.   验证码      CaptchaHandler
+2.   图片文件 (缩略，水印)     ImageFile
+
+
+三、Html 处理    Py.Html
+四、Json 处理     Py.Json
+
+五、日志功能      Py.Logging
+
+
+六、网络       Py.Net 
+
+1.  FTP      FtpClient
+2.  常用网络(下载， 邮件)  NetClient
+3.  网络浏览器      WebBrowser
+4.  POP3 邮件 和  STMP   Pop3Client
+
+七、数据库辅助      Py.Sql 
+
+
+八、网站     Py.Web
+
+1.  访客处理    Vistor
+2.  绑定    Binder
+3.  缓存处理    CacheStrategy
+4.  服务器      Server
+5.  输出        RH
+
+
+九、应用程序    Py.Windows
+
+1.   绑定    Binder
+2.   计算机信息   CPUInfo  MemoryInfo
+3.   输入法   Ime
+4.   图标    IconHelper
+5.   全局热键    Hotkey
+6.   钩子    Hook
+7.   表单辅助   FormHelper
+8.   Win32API  封装    Win32API
+9.   控件辅助 (美化  事件绑定)    ControlHelper
+
+
+
+
+十、集合    Py.Collections
+
+
+
+1.   树     TreeNode<T>
+2.   集合   Collection<T>
+3.   字典   Dictionary<TKey, TValue>
+4.   单向链表     TinyDictionary<TKey, TValue>
+5.   由一个元素控制的集合     OwnedCollection<TOwner, T>
+6.   数学上的集合   Set<T>
+7.   平衡树实现的键值匹配序列   Map<TKey, TValue>
+8.   位实现的集合   BitSet<T>
+9.   哈希实现的队列    ArrayList<T>
+10.  数组的栈实现   Stack<T>
+11.  矩阵    Matrix<T>
+12.  双向键值互索引字典   BilateralDictionary<TKey, TValue>
+13.  一对多字典   MultiDictionary<TKey, TValue>
+14.  排序集合    SortedList<T>
+
+十一、Ini 处理      Py.Text
+
+
+十二、Zip 处理        Py.Zip
+
+十三、算法   Py.Algorithm
+
+1.   计算 32 位循环冗余检验码   Crc32
+2.   加密解密    Encryption
+3.   遍历   Enumerator
+4.   搜索   Searcher
+5.   排序   Sorter
+6.   整数   BigInteger
+7.   复数   Complex
+
+
+
+十四、代码检测优化     Py.Codes
+
+
+十五、运行时功能     Py.RunTime
+
+1.  任意字符串表达式计算    Arithmetic
+2.  字符串指针处理   CString
+3.  反射辅助      ReflectionHelper
+4.  序列化辅助    SerializationHelper
+
+
+-------------------------------------------------------
+
+
+
+Py.Core.4
+Copyright 2009-2010 Xuld.

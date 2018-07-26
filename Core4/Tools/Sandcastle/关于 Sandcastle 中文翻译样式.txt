@@ -1,0 +1,9 @@
+将 Content.rar  解压并覆盖 Sandcastle 文件夹\Presentation\vs2005\Content\
+
+
+即可实现   Sandcastle 生成文档的中文。
+
+
+
+
+xuld  友情翻译。 
