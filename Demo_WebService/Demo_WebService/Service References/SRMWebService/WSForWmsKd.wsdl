@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://wmsKd.server.cxf.srm/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSForWmsKd" targetNamespace="http://wmsKd.server.cxf.srm/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://172.16.43.2:7003/SRM/WSForWmsKd?xsd=1" namespace="http://wmsKd.server.cxf.srm/" />
+    </xsd:schema>
+  </types>
+  <message name="getWms">
+    <part name="parameters" element="tns:getWms" />
+  </message>
+  <message name="getWmsResponse">
+    <part name="parameters" element="tns:getWmsResponse" />
+  </message>
+  <portType name="WSForWmsKdI">
+    <operation name="getWms">
+      <input wsam:Action="http://wmsKd.server.cxf.srm/WSForWmsKdI/getWmsRequest" message="tns:getWms" />
+      <output wsam:Action="http://wmsKd.server.cxf.srm/WSForWmsKdI/getWmsResponse" message="tns:getWmsResponse" />
+    </operation>
+  </portType>
+  <binding name="WSForWmsKdImplPortBinding" type="tns:WSForWmsKdI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getWms">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSForWmsKd">
+    <port name="WSForWmsKdImplPort" binding="tns:WSForWmsKdImplPortBinding">
+      <soap:address location="http://172.16.43.2:7003/SRM/WSForWmsKd" />
+    </port>
+  </service>
+</definitions>

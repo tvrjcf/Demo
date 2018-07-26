@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://monte-bianco.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://monte-bianco.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://monte-bianco.com/">
+      <s:element name="CheckSQLConnectionValid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckSQLConnectionValidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckSQLConnectionValidResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQLString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSQLString_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_DataSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParmName_ParmDBType_ParmValue_ParmSize_ParmDirection" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_DataSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteStoredProcedure_DataSetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_DataSet_Binary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProcName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParmName_ParmDBType_ParmValue_ParmSize_ParmDirection" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_DataSet_BinaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteStoredProcedure_DataSet_BinaryResult" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSQLServerDateTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSQLServerDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSQLServerDateTimeResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_DBPull">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTableName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_Return">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_DBPullResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteSQLString_DBPullResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_Return">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Execute_DBPush">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_Return">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Execute_DBPushResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Execute_DBPushResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_Return">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLStringBefore_DBPush">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sExecuteSQL_BeforePush" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_ToPush">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLStringBefore_DBPushResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteSQLStringBefore_DBPushResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds_ToPush">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_CheckRecordExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQLString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_CheckRecordExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteSQLString_CheckRecordExistsResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQLString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteSQLStringResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sStoredProcedureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParameters_DBType_Value_Size_Direction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteStoredProcedureResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedureWithOutPut_Int">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sStoredProcedureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParameters_DBType_Value_Size_Direction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedureWithOutPut_IntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteStoredProcedureWithOutPut_IntResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedureWithOutPut_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sStoredProcedureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParameters_DBType_Value_Size_Direction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedureWithOutPut_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteStoredProcedureWithOutPut_StringResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQLString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSQLString_StringResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_NoDelimiterString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SQLString" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSQLString_NoDelimiterStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteSQLString_NoDelimiterStringResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_MultiString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParameters_DBType_Value_Size_Direction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SplitCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_MultiStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteStoredProcedure_MultiStringResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParameters_DBType_Value_Size_Direction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteStoredProcedure_StringResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_NoDelimiterString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParameters_DBType_Value_Size_Direction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteStoredProcedure_NoDelimiterStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteStoredProcedure_NoDelimiterStringResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StrToMd5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnStr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StrToMd5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrToMd5Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptMD5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSourceStr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptMD5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptMD5Result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentIP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentIPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentIPResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sErr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_FileExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_FileExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileServer_FileExistsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DirectoryExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DirectoryName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DirectoryExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileServer_DirectoryExistsResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileServer_UploadFileResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_CreateDirectory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DirectoryName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_CreateDirectoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileServer_CreateDirectoryResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DeleteDirectory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DirectoryName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DeleteDirectoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileServer_DeleteDirectoryResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DeleteFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DeleteFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FileServer_DeleteFileResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DownloadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrSecurityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StrServerName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FileServer_DownloadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileServer_DownloadFileResult" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="errinfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckSQLConnectionValidSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckSQLConnectionValid" />
+  </wsdl:message>
+  <wsdl:message name="CheckSQLConnectionValidSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckSQLConnectionValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_DataSetSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_DataSetSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_DataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_DataSet_BinarySoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_DataSet_Binary" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_DataSet_BinarySoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_DataSet_BinaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSQLServerDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSQLServerDateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetSQLServerDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSQLServerDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_DBPullSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_DBPull" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_DBPullSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_DBPullResponse" />
+  </wsdl:message>
+  <wsdl:message name="Execute_DBPushSoapIn">
+    <wsdl:part name="parameters" element="tns:Execute_DBPush" />
+  </wsdl:message>
+  <wsdl:message name="Execute_DBPushSoapOut">
+    <wsdl:part name="parameters" element="tns:Execute_DBPushResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLStringBefore_DBPushSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLStringBefore_DBPush" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLStringBefore_DBPushSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLStringBefore_DBPushResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_CheckRecordExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_CheckRecordExists" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_CheckRecordExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_CheckRecordExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedureSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedureSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedureWithOutPut_IntSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedureWithOutPut_Int" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedureWithOutPut_IntSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedureWithOutPut_IntResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedureWithOutPut_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedureWithOutPut_String" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedureWithOutPut_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedureWithOutPut_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_String" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_NoDelimiterStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_NoDelimiterString" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSQLString_NoDelimiterStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSQLString_NoDelimiterStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_MultiStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_MultiString" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_MultiStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_MultiStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_String" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_NoDelimiterStringSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_NoDelimiterString" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteStoredProcedure_NoDelimiterStringSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteStoredProcedure_NoDelimiterStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="StrToMd5SoapIn">
+    <wsdl:part name="parameters" element="tns:StrToMd5" />
+  </wsdl:message>
+  <wsdl:message name="StrToMd5SoapOut">
+    <wsdl:part name="parameters" element="tns:StrToMd5Response" />
+  </wsdl:message>
+  <wsdl:message name="EncryptMD5SoapIn">
+    <wsdl:part name="parameters" element="tns:EncryptMD5" />
+  </wsdl:message>
+  <wsdl:message name="EncryptMD5SoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptMD5Response" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentIPSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentIP" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentIPSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_FileExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_FileExists" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_FileExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_FileExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DirectoryExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_DirectoryExists" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DirectoryExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_DirectoryExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_CreateDirectorySoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_CreateDirectory" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_CreateDirectorySoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_CreateDirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DeleteDirectorySoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_DeleteDirectory" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DeleteDirectorySoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_DeleteDirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DeleteFileSoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_DeleteFile" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DeleteFileSoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_DeleteFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DownloadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:FileServer_DownloadFile" />
+  </wsdl:message>
+  <wsdl:message name="FileServer_DownloadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:FileServer_DownloadFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="CheckSQLConnectionValid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查数据库连接字符串是否合法</wsdl:documentation>
+      <wsdl:input message="tns:CheckSQLConnectionValidSoapIn" />
+      <wsdl:output message="tns:CheckSQLConnectionValidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL查询语句返回数据集</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLString_DataSetSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLString_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_DataSet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行存储过程返回数据集</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedure_DataSetSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedure_DataSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_DataSet_Binary">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行存储过程返回序列化后的数据集</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedure_DataSet_BinarySoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedure_DataSet_BinarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSQLServerDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回服务器上数据库的信息</wsdl:documentation>
+      <wsdl:input message="tns:GetSQLServerDateTimeSoapIn" />
+      <wsdl:output message="tns:GetSQLServerDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_DBPull">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">从数据服务器中取得数据</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLString_DBPullSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLString_DBPullSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Execute_DBPush">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">将数据上传到服务器的数据库</wsdl:documentation>
+      <wsdl:input message="tns:Execute_DBPushSoapIn" />
+      <wsdl:output message="tns:Execute_DBPushSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLStringBefore_DBPush">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">将在数据上传之前执行SQL，然再再将数据写入服务器的数据库</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLStringBefore_DBPushSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLStringBefore_DBPushSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_CheckRecordExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据SQL查询语句查询是否存在记录</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLString_CheckRecordExistsSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLString_CheckRecordExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL查询语句</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLStringSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL存储过程,返回True/False</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedureSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedureWithOutPut_Int">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL存储过程,返回INT</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedureWithOutPut_IntSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedureWithOutPut_IntSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedureWithOutPut_String">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL存储过程,返回STRING</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedureWithOutPut_StringSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedureWithOutPut_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_String">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL返回字符串</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLString_StringSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLString_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_NoDelimiterString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行SQL返回无分隔符字符串</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteSQLString_NoDelimiterStringSoapIn" />
+      <wsdl:output message="tns:ExecuteSQLString_NoDelimiterStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_MultiString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行存储过程返回用自定义分隔符分割的字符串</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedure_MultiStringSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedure_MultiStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_String">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行存储过程返回字符串</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedure_StringSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedure_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_NoDelimiterString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">执行存储过程返回无分隔符字符串</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteStoredProcedure_NoDelimiterStringSoapIn" />
+      <wsdl:output message="tns:ExecuteStoredProcedure_NoDelimiterStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StrToMd5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">加密字符串</wsdl:documentation>
+      <wsdl:input message="tns:StrToMd5SoapIn" />
+      <wsdl:output message="tns:StrToMd5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptMD5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">加密字符串</wsdl:documentation>
+      <wsdl:input message="tns:EncryptMD5SoapIn" />
+      <wsdl:output message="tns:EncryptMD5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentIP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回客户端IP地址</wsdl:documentation>
+      <wsdl:input message="tns:GetCurrentIPSoapIn" />
+      <wsdl:output message="tns:GetCurrentIPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_FileExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">判断文件是否存在</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_FileExistsSoapIn" />
+      <wsdl:output message="tns:FileServer_FileExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DirectoryExists">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">判断文件夹是否存在</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_DirectoryExistsSoapIn" />
+      <wsdl:output message="tns:FileServer_DirectoryExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传文件</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_UploadFileSoapIn" />
+      <wsdl:output message="tns:FileServer_UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_CreateDirectory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">创建文件夹</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_CreateDirectorySoapIn" />
+      <wsdl:output message="tns:FileServer_CreateDirectorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DeleteDirectory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除文件夹</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_DeleteDirectorySoapIn" />
+      <wsdl:output message="tns:FileServer_DeleteDirectorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DeleteFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">删除文件</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_DeleteFileSoapIn" />
+      <wsdl:output message="tns:FileServer_DeleteFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DownloadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载文件</wsdl:documentation>
+      <wsdl:input message="tns:FileServer_DownloadFileSoapIn" />
+      <wsdl:output message="tns:FileServer_DownloadFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckSQLConnectionValid">
+      <soap:operation soapAction="http://monte-bianco.com/CheckSQLConnectionValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_DataSet">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLString_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_DataSet">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_DataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_DataSet_Binary">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_DataSet_Binary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSQLServerDateTime">
+      <soap:operation soapAction="http://monte-bianco.com/GetSQLServerDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_DBPull">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLString_DBPull" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute_DBPush">
+      <soap:operation soapAction="http://monte-bianco.com/Execute_DBPush" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLStringBefore_DBPush">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLStringBefore_DBPush" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_CheckRecordExists">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLString_CheckRecordExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedureWithOutPut_Int">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedureWithOutPut_Int" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedureWithOutPut_String">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedureWithOutPut_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_String">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLString_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_NoDelimiterString">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteSQLString_NoDelimiterString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_MultiString">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_MultiString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_String">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_NoDelimiterString">
+      <soap:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_NoDelimiterString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrToMd5">
+      <soap:operation soapAction="http://monte-bianco.com/StrToMd5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptMD5">
+      <soap:operation soapAction="http://monte-bianco.com/EncryptMD5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentIP">
+      <soap:operation soapAction="http://monte-bianco.com/GetCurrentIP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_FileExists">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_FileExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DirectoryExists">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_DirectoryExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_UploadFile">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_CreateDirectory">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_CreateDirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DeleteDirectory">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_DeleteDirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DeleteFile">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_DeleteFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DownloadFile">
+      <soap:operation soapAction="http://monte-bianco.com/FileServer_DownloadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckSQLConnectionValid">
+      <soap12:operation soapAction="http://monte-bianco.com/CheckSQLConnectionValid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_DataSet">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLString_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_DataSet">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_DataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_DataSet_Binary">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_DataSet_Binary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSQLServerDateTime">
+      <soap12:operation soapAction="http://monte-bianco.com/GetSQLServerDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_DBPull">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLString_DBPull" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Execute_DBPush">
+      <soap12:operation soapAction="http://monte-bianco.com/Execute_DBPush" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLStringBefore_DBPush">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLStringBefore_DBPush" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_CheckRecordExists">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLString_CheckRecordExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedureWithOutPut_Int">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedureWithOutPut_Int" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedureWithOutPut_String">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedureWithOutPut_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_String">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLString_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSQLString_NoDelimiterString">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteSQLString_NoDelimiterString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_MultiString">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_MultiString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_String">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteStoredProcedure_NoDelimiterString">
+      <soap12:operation soapAction="http://monte-bianco.com/ExecuteStoredProcedure_NoDelimiterString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrToMd5">
+      <soap12:operation soapAction="http://monte-bianco.com/StrToMd5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptMD5">
+      <soap12:operation soapAction="http://monte-bianco.com/EncryptMD5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentIP">
+      <soap12:operation soapAction="http://monte-bianco.com/GetCurrentIP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_FileExists">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_FileExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DirectoryExists">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_DirectoryExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_UploadFile">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_CreateDirectory">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_CreateDirectory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DeleteDirectory">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_DeleteDirectory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DeleteFile">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_DeleteFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileServer_DownloadFile">
+      <soap12:operation soapAction="http://monte-bianco.com/FileServer_DownloadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:9000/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:9000/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
