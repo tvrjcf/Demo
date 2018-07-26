@@ -1,0 +1,276 @@
+{
+  "apks": [
+    {
+      "name": "PluginMain.apk",
+      "type": "platform",
+      "updateTime": "2016-9-5 17:28:49",
+      "version": "1.79"
+    },
+    {
+      "name": "materialreceived.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialreceived",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.663"
+    },
+    {
+      "name": "iqcmaterialsborrow.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.iqcmaterialsborrow",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.029"
+    },
+    {
+      "name": "iqcmaterialsreturn.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.iqcmaterialsreturn",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.028"
+    },
+    {
+      "name": "materialtransfer_rtv.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialtransfer_rtv",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.012"
+    },
+    {
+      "name": "materialsends.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialsends",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.028"
+    },
+    {
+      "name": "materialonshelves.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialonshelves",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.041"
+    },
+    {
+      "name": "materialpickingoffshelf.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "materialpickingoffshelf.apk?ISSUEOEM",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "materialpickingoffshelf.apk?ISSUETSMO",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "materialpickingoffshelf.apk?ISSUEWIP",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "materialpickingoffshelf.apk?ISSUECOST",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "materialpickingoffshelf.apk?ISSUEASSIST",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "materialpickingoffshelf.apk?YFYLGZ",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialpickingoffshelf",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.055"
+    },
+    {
+      "name": "keymaterialsinfoinput.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.keymaterialsinfoinput",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.008"
+    },
+    {
+      "name": "materialreturninwarehouse.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialreturninwarehouse",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.022"
+    },
+    {
+      "name": "transferupbetweenstore.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.transferup",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.009"
+    },
+    {
+      "name": "transferinstore.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.transferinstore",
+      "updateTime": "2016-9-30 16:43:00",
+      "version": "1.008"
+    },
+    {
+      "name": "transferdownbetween.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.transferdownbetween",
+      "updateTime": "2016-12-29 16:43:00",
+      "version": "1.039"
+    },
+    {
+      "name": "materialrtv.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialrtv",
+      "updateTime": "2016-9-30 16:45:00",
+      "version": "1.053"
+    },
+    {
+      "name": "ProdStoreShelves.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.prodstoreshelves",
+      "updateTime": "2017-1-1 16:45:00",
+      "version": "1.017"
+    },
+    {
+      "name": "transfermaterial.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.transfermaterial",
+      "updateTime": "2017-1-5 16:45:00",
+      "version": "1.014"
+    },
+    {
+      "name": "stockquery.apk",
+      "type": "plugin",
+      "mainActivity": "com.chinasie.stockquery",
+      "updateTime": "2017-1-6 16:45:00",
+      "version": "1.007"
+    },
+    {
+      "name": "queryitemlabel.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.queryitemlabel",
+      "updateTime": "2017-1-6 20:15:00",
+      "version": "1.012"
+    },
+    {
+      "name": "IqcQuery.apk",
+      "type": "plugin",
+      "mainActivity": "com.chinasie.IqcQuery",
+      "updateTime": "2017-1-6 20:15:00",
+      "version": "1.008"
+    },
+    {
+      "name": "MaterialReturnQualified.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialreturnqualified",
+      "updateTime": "2017-1-6 20:15:00",
+      "version": "1.011"
+    },
+    {
+      "name": "ProdStoreShelvesNoBill.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.prodstoreshelvesnobill",
+      "updateTime": "2017-1-6 20:15:00",
+      "version": "1.018"
+    },
+    {
+      "name": "scarpbill.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.scarpbill",
+      "updateTime": "2017-1-10 20:15:00",
+      "version": "1.030"
+    },
+    {
+      "name": "rtvwithoutbill.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.rtvwithoutbill",
+      "updateTime": "2017-1-12 20:15:00",
+      "version": "1.014"
+    },
+    {
+      "name": "stockcheck.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.stockcheck",
+      "updateTime": "2017-1-12 20:15:00",
+      "version": "1.004"
+    },
+    {
+      "name": "bacthlocationtransfer.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.bacthlocationtransfer",
+      "updateTime": "2017-1-18 20:15:00",
+      "version": "1.002"
+    },
+    {
+      "name": "materialonshelvesbyiqc.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.materialonshelvesbyiqc",
+      "updateTime": "2017-2-06 18:15:00",
+      "version": "1.020"
+    },
+    {
+      "name": "batchcollection.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.batchcollection",
+      "updateTime": "2017-2-09 18:15:00",
+      "version": "1.006"
+    },
+    {
+      "name": "ItemChange.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.itemchange",
+      "updateTime": "2017-2-12 16:05:00",
+      "version": "1.001"
+    },
+    {
+      "name": "exceptionhandle.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.exceptionhandle",
+      "updateTime": "2017-2-16 18:05:00",
+      "version": "1.005"
+    },
+    {
+      "name": "warehousescarp.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.warehousescarp",
+      "updateTime": "2017-2-20 18:05:00",
+      "version": "1.006"
+    },
+    {
+      "name": "othermaterialinwarehouse.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.othermaterialinwarehouse",
+      "updateTime": "2017-2-20 18:05:00",
+      "version": "1.001"
+    },
+    {
+      "name": "ProStoreMix.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.prostoremix",
+      "updateTime": "2017-2-21 18:05:00",
+      "version": "1.002"
+    },
+    {
+      "name": "prostoreinwarehouse.apk",
+      "type": "plugin",
+      "mainActivity": "sie.pda.prostoreinwarehouse",
+      "updateTime": "2017-2-24 15:05:00",
+      "version": "1.009"
+    }
+  ]
+}
