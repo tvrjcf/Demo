@@ -1,0 +1,1709 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TRANS</name>
+    </assembly>
+    <members>
+        <member name="T:TRANS.TransactionProcessing.ItemLabelTrans">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.ItemLabelTrans.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ItemLabelTrans.itemLabel">
+            <summary>
+            来源仓库
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ItemLabelTrans.Qty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.LabelHistory">
+            <summary>
+            条码履历表
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistory.QtyProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistory.Qty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistory.OperatorProperty">
+            <summary>
+            操作人
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistory.Operator">
+            <summary>
+            操作人
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistory.OperatorDateProperty">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistory.OperatorDate">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistory.TransactionDefineIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistory.TransactionDefineId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistory.TransactionDefineProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistory.TransactionDefine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistory.ItemLabel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.LabelHistoryList">
+            <summary>
+            条码履历表 列表
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.LabelHistoryRepository">
+            <summary>
+            条码履历表 仓库
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.LabelHistoryConfig">
+            <summary>
+            条码履历表 实体配置
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.LabelHistorysController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.LabelHistorysController.GetLabelHistoryList(TRANS.TransactionProcessing.LabelHistoryCriteria)">
+            <summary>
+            
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.LabelHistorysController.DoSaveLabelHistorys(BD.ItemLabels.ItemLabel,INV.Hisense.Transactions.TransactionDefine,System.Double)">
+            <summary>
+            保存条码履历
+            </summary>
+            <param name="itemLabel">条码实体</param>
+            <param name="transactionDefine">条码</param>
+            <param name="Qty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.LabelHistorysController.DoSaveLabelHistorys(BD.ItemLabels.ItemLabel,System.Int32,System.Double)">
+            <summary>
+            保存条码履历
+            </summary>
+            <param name="itemLabel">条码实体</param>
+            <param name="transactionDefine">条码</param>
+            <param name="Qty"></param>
+            <returns></returns>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistoryCriteria.BarCodeProperty">
+            <summary>
+            条码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistoryCriteria.BarCode">
+            <summary>
+            条码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistoryCriteria.TransactionDateProperty">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistoryCriteria.TransactionDate">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistoryCriteria.ItemLabelIdProperty">
+            <summary>
+            物料标签
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistoryCriteria.ItemLabel">
+            <summary>
+            物料标签
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistoryCriteria.EmployeeIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistoryCriteria.EmployeeId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistoryCriteria.EmployeeProperty">
+            <summary>
+            操作员工
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistoryCriteria.Employee">
+            <summary>
+            操作员工
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.LabelHistoryCriteria.TransactionDefineIdProperty">
+            <summary>
+            事务定义
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.LabelHistoryCriteria.TransactionDefine">
+            <summary>
+            事务定义
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.MaterialTransactionData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.MaterialTransactionData.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.BillNo">
+            <summary>
+            单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.BillId">
+            <summary>
+            单据ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.BillDetailId">
+            <summary>
+            单明细ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.AccountId">
+            <summary>
+            账户ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.AccountCode">
+            <summary>
+            账户名称
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.CombinationId">
+            <summary>
+            组合ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.CombinationCode">
+            <summary>
+            账务组合代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.SourceBillNo">
+            <summary>
+            系统单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.SourceBillId">
+            <summary>
+            系统单ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.SourceBillLineId">
+            <summary>
+            系统单行
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.SpecialType">
+            <summary>
+            特殊类型
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.BillDetailNo">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.WorkShop">
+             <summary>
+            车间
+             </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.LineCode">
+            <summary>
+            产线
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.Unit">
+             <summary>
+            单位
+             </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.Reason">
+             <summary>
+            原因
+             </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.WoId">
+             <summary>
+            工单ID
+             </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransactionData.WoCode">
+             <summary>
+            工单Code
+             </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.RcvTransactionData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.RcvTransactionData.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.BillNo">
+            <summary>
+            业务单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.BillId">
+            <summary>
+            业务单号ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.BillDetailId">
+            <summary>
+            业务单明细ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.BillDetailNo">
+            <summary>
+            单据明细号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.PodistributionId">
+            <summary>
+            采购单分配ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.PoLinelocationId">
+            <summary>
+            采购单发运ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.PoHeadId">
+            <summary>
+            采购单头
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.PoLineId">
+            <summary>
+            采购单行
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.SourceBillNo">
+            <summary>
+            来源单据号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.SourceBillLineId">
+            <summary>
+            来源单行ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.SourceBillId">
+            <summary>
+            来源单头ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.Reason">
+            <summary>
+            原因
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.PoNo">
+            <summary>
+            采购单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.SupplierId">
+            <summary>
+            供应商ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.SupplierAddress">
+            <summary>
+            供应商地址ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.RcvTransactionData.ReasonId">
+            <summary>
+            原因ID
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.ReceiveType">
+            <summary>
+            接收类型
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.StockTrans">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.StockTrans.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.StockTrans.rSeq">
+            <summary>
+            顺序
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.StockTrans.sourceWarehouseId">
+            <summary>
+            来源仓库
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.StockTrans.sourceStorageLocationId">
+            <summary>
+            来源储位
+            </summary>
+            
+        </member>
+        <member name="P:TRANS.TransactionProcessing.StockTrans.targetWarehouseId">
+            <summary>
+            目标仓库
+            </summary>
+            
+        </member>
+        <member name="P:TRANS.TransactionProcessing.StockTrans.targetStorageLocationId">
+            <summary>
+            目标储位
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.TransactionProcessingController">
+            <summary>
+            事务处理
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.TransactionProcessingController.RcvTransaction(INV.Hisense.Transactions.FunctionType,INV.Hisense.Transactions.TransactionDefine,TRANS.TransactionProcessing.ReceiveType,BD.Items.Item,System.Double,System.Collections.Generic.List{TRANS.TransactionProcessing.ItemLabelTrans},System.Collections.Generic.List{TRANS.TransactionProcessing.StockTrans},TRANS.TransactionProcessing.RcvTransactionData)">
+            <summary>
+            来料事务处理
+            2016.8.15
+            zengfl
+            
+            事务逻辑处理范围包括：接收、检验、入库
+            </summary>
+            <param name="function">功能：配置的对应的功能类型</param>
+            <param name="transactionDefine">事务：功能需要配置的事务处理</param>
+            <param name="receiveType">接收类型</param>
+            <param name="item">物料：事务处理的物料</param>
+            <param name="Qty">本次事务处理数量</param>
+            <param name="itemLabelTransList">标签与数量列表：本次事务处理标签信息和处理数量</param>
+            <param name="stockTransList">仓库与位置：与事务配置相对应的操作仓库或者位置</param>
+            <param name="rcvTransactionData">相关数据：需要交易上传或者记录的相关数据</param>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.TransactionProcessingController.MaterialTransaction(INV.Hisense.Transactions.FunctionType,INV.Hisense.Transactions.TransactionDefine,BD.Items.Item,System.Collections.Generic.List{TRANS.TransactionProcessing.ItemLabelTrans},System.Collections.Generic.List{TRANS.TransactionProcessing.StockTrans},TRANS.TransactionProcessing.MaterialTransactionData)">
+            <summary>
+            库存事务处理
+            2016.8.15
+            zengfl
+            
+            事务逻辑处理范围包括：仓库内部或者仓库之间的事务处理
+            </summary>
+            <param name="function">功能：配置的对应的功能类型</param>
+            <param name="transactionDefine">事务：功能需要配置的事务处理</param>
+            <param name="item">物料：事务处理的物料</param>
+            <param name="itemLabelTransList">标签与数量列表：本次事务处理标签信息和处理数量</param>
+            <param name="stockTransList">仓库与位置：与事务配置相对应的操作仓库或者位置</param>
+            <param name="materialTransactionData">相关数据：需要交易上传或者记录的相关数据</param>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.MaterialTransaction">
+            <summary>
+            交易
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ActionSeqProperty">
+            <summary>
+            执行顺序
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ActionSeq">
+            <summary>
+            执行顺序
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.BillNoProperty">
+            <summary>
+            单据号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.BillNo">
+            <summary>
+            单据号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.BillIdProperty">
+            <summary>
+            单据ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.BillId">
+            <summary>
+            单据ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.BillDetailNoProperty">
+            <summary>
+            单据明细号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.BillDetailNo">
+            <summary>
+            单据明细号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.BillDetailIdProperty">
+            <summary>
+            单据明细ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.BillDetailId">
+            <summary>
+            单据明细ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.QtyProperty">
+            <summary>
+            交易数量
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Qty">
+            <summary>
+            交易数量
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TransactionDateProperty">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TransactionDate">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.OnHandProperty">
+            <summary>
+            库存量
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.OnHand">
+            <summary>
+            库存量
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.BrandProperty">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.VersionProperty">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.FunctionCodeProperty">
+            <summary>
+            功能代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.FunctionCode">
+            <summary>
+            功能代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TransactionCodeProperty">
+            <summary>
+            事务代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TransactionCode">
+            <summary>
+            事务代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemTypeProperty">
+            <summary>
+            物料类型
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ItemType">
+            <summary>
+            物料类型
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemNameProperty">
+            <summary>
+            物料编码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ItemName">
+            <summary>
+            物料编码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemDescProperty">
+            <summary>
+            物料描述
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ItemDesc">
+            <summary>
+            物料描述
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.AccountIdProperty">
+            <summary>
+            账户别名ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.AccountId">
+            <summary>
+            账户别名ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.AccountCodeProperty">
+            <summary>
+            账户别名代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.AccountCode">
+            <summary>
+            账户别名代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.CombinationIdProperty">
+            <summary>
+            账务组合ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.CombinationId">
+            <summary>
+            账务组合ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SourceBillNoProperty">
+            <summary>
+            来源单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SourceBillNo">
+            <summary>
+            来源单号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SourceBillIdProperty">
+            <summary>
+            来源单据ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SourceBillId">
+            <summary>
+            来源单据ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SourceBillLineIdProperty">
+            <summary>
+            来源单据行ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SourceBillLineId">
+            <summary>
+            来源单据行ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.CombinationCodeProperty">
+            <summary>
+            账务组合代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.CombinationCode">
+            <summary>
+            账务组合代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SpecialTypeProperty">
+            <summary>
+            例外处理类型
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SpecialType">
+            <summary>
+            例外处理类型
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemSmallCategoryIdProperty">
+            <summary>
+            物料小类ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ItemSmallCategoryId">
+            <summary>
+            物料小类ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemSmallCategoryCodeProperty">
+            <summary>
+            物料小类代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ItemSmallCategoryCode">
+            <summary>
+            物料小类代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TransactionIdProperty">
+            <summary>
+            事务Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TransactionId">
+            <summary>
+            事务Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.FunctionIdProperty">
+            <summary>
+            功能ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.FunctionId">
+            <summary>
+            功能ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TargetWarehouseCodeProperty">
+            <summary>
+            目标仓库代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TargetWarehouseCode">
+            <summary>
+            目标仓库代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TargetLocationCodeProperty">
+            <summary>
+            目标货位代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TargetLocationCode">
+            <summary>
+            目标货位代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.WorkShopProperty">
+            <summary>
+            车间
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.WorkShop">
+            <summary>
+            车间
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.LineCodeProperty">
+            <summary>
+            产线
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.LineCode">
+            <summary>
+            产线
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.UnitProperty">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.RemarkProperty">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ReasonProperty">
+            <summary>
+            原因
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Reason">
+            <summary>
+            原因
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.EmployeeNoProperty">
+            <summary>
+            员工号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.EmployeeNo">
+            <summary>
+            员工号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.IntraoperationStepProperty">
+            <summary>
+            起始工序内部步骤
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.IntraoperationStep">
+            <summary>
+            起始工序内部步骤
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.OperationSeqNumProperty">
+            <summary>
+            起始工序号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.OperationSeqNum">
+            <summary>
+            起始工序号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.EndIntraoperationStepProperty">
+            <summary>
+            终止工序内部步骤
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.EndIntraoperationStep">
+            <summary>
+            终止工序内部步骤
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.EndOperationSeqNumProperty">
+            <summary>
+            起始工序号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.EndOperationSeqNum">
+            <summary>
+            起始工序号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ReceiveInvOrgIdProperty">
+            <summary>
+            接收库存组织
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ReceiveInvOrgId">
+            <summary>
+            接收库存组织
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.WoCodeProperty">
+            <summary>
+            工单
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.WoCode">
+            <summary>
+            工单
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.WoIdProperty">
+            <summary>
+            工单ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.WoId">
+            <summary>
+            工单ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ReasonIdProperty">
+            <summary>
+            原因ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ReasonId">
+            <summary>
+            原因ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.ItemId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.ItemProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TargetWarehouseIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TargetWarehouseId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TargetWarehouseProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TargetWarehouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SourceBillTypeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SourceBillType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TargetLocationIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TargetLocationId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.TargetLocationProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.TargetLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.sourceLocationIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.sourceLocationId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.sourceLocationProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.sourceLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SourceWarehouseIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SourceWarehouseId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.SourceWarehouseProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.SourceWarehouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.MaterialTransaction.PreviousStepIdProperty">
+            <summary>
+            上一级ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.MaterialTransaction.PreviousStepId">
+            <summary>
+            上一级ID
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.MaterialTransactionList">
+            <summary>
+            交易 列表
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.MaterialTransactionRepository">
+            <summary>
+            交易 仓库
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.MaterialTransactionConfig">
+            <summary>
+            交易 实体配置
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.ReceiveTransaction">
+            <summary>
+            交易
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ActionSeqProperty">
+            <summary>
+            执行顺序
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ActionSeq">
+            <summary>
+            执行顺序
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.BillNoProperty">
+            <summary>
+            单据号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.BillNo">
+            <summary>
+            单据号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.BillIdProperty">
+            <summary>
+            单据ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.BillId">
+            <summary>
+            单据ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.BillDetailNoProperty">
+            <summary>
+            单据明细号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.BillDetailNo">
+            <summary>
+            单据明细号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.BillDetailIdProperty">
+            <summary>
+            单据明细ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.BillDetailId">
+            <summary>
+            单据明细ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.QtyProperty">
+            <summary>
+            交易数量
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Qty">
+            <summary>
+            交易数量
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TransactionDateProperty">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TransactionDate">
+            <summary>
+            交易时间
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.OnHandProperty">
+            <summary>
+            库存量
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.OnHand">
+            <summary>
+            库存量
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.BrandProperty">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Brand">
+            <summary>
+            品牌
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.VersionProperty">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Version">
+            <summary>
+            版本
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.FunctionCodeProperty">
+            <summary>
+            功能代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.FunctionCode">
+            <summary>
+            功能代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TransactionCodeProperty">
+            <summary>
+            事务代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TransactionCode">
+            <summary>
+            事务代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemTypeProperty">
+            <summary>
+            物料类型
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ItemType">
+            <summary>
+            物料类型
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemNameProperty">
+            <summary>
+            物料编码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ItemName">
+            <summary>
+            物料编码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemDescProperty">
+            <summary>
+            物料描述
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ItemDesc">
+            <summary>
+            物料描述
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.PoDistributionsIdProperty">
+            <summary>
+            PO分配ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.PoDistributionsId">
+            <summary>
+            PO分配ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.PoLinelocationsIdProperty">
+            <summary>
+            发运ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.PoLinelocationsId">
+            <summary>
+            发运ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.PoHeadIdProperty">
+            <summary>
+            POID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.PoHeadId">
+            <summary>
+            POID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.PoLineIdProperty">
+            <summary>
+            PO行ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.PoLineId">
+            <summary>
+            PO行ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillNoProperty">
+            <summary>
+            来源单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillNo">
+            <summary>
+            来源单号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillIdProperty">
+            <summary>
+            来源单据ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillId">
+            <summary>
+            来源单据ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillLineIdProperty">
+            <summary>
+            来源单据行ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillLineId">
+            <summary>
+            来源单据行ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemSmallCategoryIdProperty">
+            <summary>
+            物料小类ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ItemSmallCategoryId">
+            <summary>
+            物料小类ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemSmallCategoryCodeProperty">
+            <summary>
+            物料小类代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ItemSmallCategoryCode">
+            <summary>
+            物料小类代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.FunctionIdProperty">
+            <summary>
+            功能ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.FunctionId">
+            <summary>
+            功能ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TransactionIdProperty">
+            <summary>
+            事务ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TransactionId">
+            <summary>
+            事务ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TargetWarehouseCodeProperty">
+            <summary>
+            目标仓库代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TargetWarehouseCode">
+            <summary>
+            目标仓库代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TargetLocationCodeProperty">
+            <summary>
+            目标货位代码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TargetLocationCode">
+            <summary>
+            目标货位代码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.UnitProperty">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Unit">
+            <summary>
+            单位
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.RemarkProperty">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.PoNoProperty">
+            <summary>
+            采购单号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.PoNo">
+            <summary>
+            采购单号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SupplierIdProperty">
+            <summary>
+            供应商ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SupplierId">
+            <summary>
+            供应商ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SupplierAddressProperty">
+            <summary>
+            供应商地址
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SupplierAddress">
+            <summary>
+            供应商地址
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ReasonProperty">
+            <summary>
+            原因
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Reason">
+            <summary>
+            原因
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.EmployeeNoProperty">
+            <summary>
+            员工号
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.EmployeeNo">
+            <summary>
+            员工号
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ReasonIdProperty">
+            <summary>
+            原因ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ReasonId">
+            <summary>
+            原因ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.UploadTagProperty">
+            <summary>
+            上传标记
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.UploadTag">
+            <summary>
+            上传标记
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TargetLocationIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TargetLocationId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TargetLocationProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TargetLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TargetWarehouseIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TargetWarehouseId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.TargetWarehouseProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.TargetWarehouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ItemId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ItemProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillTypeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceBillType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceLocationIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceLocationId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceLocationProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceWarehouseIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceWarehouseId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.SourceWarehouseProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.SourceWarehouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.ReceiveTypeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.ReceiveType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.ReceiveTransaction.PreviousStepIdProperty">
+            <summary>
+            上一级ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.ReceiveTransaction.PreviousStepId">
+            <summary>
+            上一级ID
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.ReceiveTransactionList">
+            <summary>
+            交易 列表
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.ReceiveTransactionRepository">
+            <summary>
+            交易 仓库
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.ReceiveTransactionConfig">
+            <summary>
+            交易 实体配置
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.SourceBillType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.TransactionLabel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TRANS.TransactionProcessing.TransactionLabel.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.ItemLabelProperty">
+            <summary>
+            物料标签
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.ItemLabel">
+            <summary>
+            物料标签
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.QtyProperty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.Qty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.SourceIdProperty">
+            <summary>
+            来源ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.SourceId">
+            <summary>
+            来源ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.ItemIdProperty">
+            <summary>
+            物料ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.ItemId">
+            <summary>
+            物料ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.ItemNameProperty">
+            <summary>
+            物料编码
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.ItemName">
+            <summary>
+            物料编码
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.ItemLabelIdProperty">
+            <summary>
+            标签ID
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.ItemLabelId">
+            <summary>
+            标签ID
+            </summary>
+        </member>
+        <member name="F:TRANS.TransactionProcessing.TransactionLabel.SourceTypeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TransactionProcessing.TransactionLabel.SourceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.TransactionLabelList">
+            <summary>
+             列表
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.TransactionLabelRepository">
+            <summary>
+             仓库
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.TransactionLabelConfig">
+            <summary>
+             实体配置
+            </summary>
+        </member>
+        <member name="T:TRANS.TransactionProcessing.TransactionSourceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TRANS.TRANSEntityRepository`2">
+            <summary>
+            实体仓库基类
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:TRANS.TRANSEntityDataProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:TRANS.TRANSEntityDataProvider.ConnectionStringName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:TRANS.TRANSEntityDataProvider.ConnectionStringSettingName">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

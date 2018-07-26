@@ -1,0 +1,1251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BD.Hisense</name>
+    </assembly>
+    <members>
+        <member name="T:BD.Hisense.HisenseBDEntityRepository`2">
+            <summary>
+            实体仓库基类
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:BD.Hisense.HisenseBDEntityDataProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.HisenseBDEntityDataProvider.ConnectionStringName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.HisenseBDEntityDataProvider.ConnectionStringSettingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Common.InterfaceDateControl">
+            <summary>
+            接口时间控制
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Common.InterfaceDateControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Common.InterfaceDateControl.TypeProperty">
+            <summary>
+            接口类型
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.InterfaceDateControl.Type">
+            <summary>
+            接口类型
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Common.InterfaceDateControl.ActionLastDateProperty">
+            <summary>
+            最后一次执行成功时间
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.InterfaceDateControl.ActionLastDate">
+            <summary>
+            最后一次执行成功时间
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Common.InterfaceDateControl.ThisDateProperty">
+            <summary>
+            本次时间
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.InterfaceDateControl.ThisDate">
+            <summary>
+            本次时间
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Common.InterfaceDateControl.MsgProperty">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.InterfaceDateControl.Msg">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Common.InterfaceDateControlList">
+            <summary>
+            接口时间控制 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Common.InterfaceDateControlRepository">
+            <summary>
+            接口时间控制 仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Common.InterfaceDateControlConfig">
+            <summary>
+            接口时间控制 实体配置
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Common.CommonController.GetDateByType(System.String)">
+            <summary>
+            根据类型获取接口时间
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Common.CommonController.CreateDate(System.String)">
+            <summary>
+            根据类型创建接口时间
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BD.Hisense.Common.StorageLocationInfo">
+            <summary>
+            货位信息
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.StorageLocationId">
+            <summary>
+            货位ID
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.StorageLocationCode">
+            <summary>
+            货位编码
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.StorageLocationName">
+            <summary>
+            货位名称
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.StorageAreaId">
+            <summary>
+            货区ID
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.StorageAreaCode">
+            <summary>
+            货区编码
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.StorageAreaName">
+            <summary>
+            货区名称
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.WarehouseId">
+            <summary>
+            仓库ID
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.WarehouseCode">
+            <summary>
+            仓库编码
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.WarehouseName">
+            <summary>
+            仓库名称
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.StorageLocationInfo.WarehouseType">
+            <summary>
+            仓库类型
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Common.BaseObj">
+            <summary>
+            PDA基类，所有PDA类都要继承此类
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.BaseObj.UserID">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.BaseObj.InvOrgID">
+            <summary>
+            组织Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.BaseObj.IsSuccess">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.BaseObj.Message">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Common.BillBaseObj">
+            <summary>
+            PDA单据基类，所有PDA类都要继承此类
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Common.BillBaseObj.No">
+            <summary>
+            单号
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.InterfaceLog">
+            <summary>
+            接口通用日志
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.ContextInfo">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.InterfaceLog.InterfaceNameProperty">
+            <summary>
+            接口名称
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.InterfaceName">
+            <summary>
+            接口名称
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.InterfaceLog.LogDateProperty">
+            <summary>
+            信息日期
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.LogDate">
+            <summary>
+            信息日期
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.LogLevel">
+            <summary>
+            信息级别
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.InterfaceLog.LogExceptionProperty">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.LogException">
+            <summary>
+            异常信息
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.InterfaceLog.InterfaceTypeProperty">
+            <summary>
+            接口类型
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.InterfaceType">
+            <summary>
+            接口类型
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.InterfaceLog.MainInfoProperty">
+            <summary>
+            主要信息
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.MainInfo">
+            <summary>
+            主要信息
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.InterfaceLog.IsSuccessProperty">
+            <summary>
+            是否成功 1 成功
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.InterfaceLog.IsSuccess">
+            <summary>
+            是否成功 1 成功
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:BD.Hisense.InterfaceLogList" -->
+        <member name="T:BD.Hisense.InterfaceLogRepository">
+            <summary>
+            仓库
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.InterfaceLogRepository.#ctor">
+            <summary>
+            单例模式，外界不可以直接构造本对象。
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.InterfaceLogConfig">
+            <summary>
+             实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.LogLevel">
+            <summary>
+            日志级别
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.CustomerItems.CustomerItemCriteria">
+            <summary>
+            物料属性
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.CustomerItems.CustomerItemCriteria.CustomerCodeProperty">
+            <summary>
+            客户的物料编号
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.CustomerItems.CustomerItemCriteria.CustomerCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.CustomerItems.CustomerItemCriteria.ItemIdProperty">
+            <summary>
+            对应的物料
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.CustomerItems.CustomerItemCriteria.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.CustomerItems.CustomerItem">
+            <summary>
+            物料属性
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.CustomerItems.CustomerItem.CustomerCodeProperty">
+            <summary>
+            客户的物料编号
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.CustomerItems.CustomerItem.CustomerCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.CustomerItems.CustomerItem.ItemIdProperty">
+            <summary>
+            对应的物料
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.CustomerItems.CustomerItem.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.CustomerItems.CustomerItemList">
+            <summary>
+            物料属性 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.CustomerItems.CustomerItemRepository">
+            <summary>
+            物料属性 仓库
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.CustomerItems.CustomerItemRepository.#ctor">
+            <summary>
+            单例模式，外界不可以直接构造本对象。
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.CustomerItems.CustomerItemConfig">
+            <summary>
+            物料属性 实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Employees.EmployeeExtCriteria">
+            <summary>
+            员工查询实体
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.Code">
+            <summary>
+            工号
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Employees.EmployeeExtCriteria.NameProperty">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Employees.EmployeeExtCriteria.WorkGroupIdProperty">
+            <summary>
+            班组ID
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.WorkGroupId">
+            <summary>
+            班组ID
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Employees.EmployeeExtCriteria.WorkGroupProperty">
+            <summary>
+            班组
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.WorkGroup">
+            <summary>
+            班组
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.FactoryId">
+            <summary>
+            部门Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.Factory">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Employees.EmployeeExtCriteria.UserIdProperty">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.UserId">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Employees.EmployeeExtCriteria.UserProperty">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.ExcludeUserId">
+            <summary>
+            排除UerID
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.IsLinkUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Employees.EmployeeExtCriteria.AuditPowerProperty">
+            <summary>
+            审核权限
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Employees.EmployeeExtCriteria.AuditPower">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Employees.EmployeeConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Employees.EmployeeExtController.GetList(BD.Hisense.Employees.EmployeeExtCriteria)">
+            <summary>
+            根据查询实体查询
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemExtCntroller.SetMinPack(BD.Items.Item)">
+            <summary>
+            设置最小包装
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemExtCntroller.GetItemListByMoreEmp(System.String)">
+            <summary>
+            循环用仓管员ID查询物料
+            </summary>
+            <param name="MulEmp">仓管员编码字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemExtCntroller.GetItemListByEmployee(System.Int32)">
+            用仓管员ID查询物料 
+        </member>
+        <member name="M:BD.Hisense.Items.ItemExtCntroller.GetItemListByUser(System.Int32)">
+            用UserId查询物料 
+        </member>
+        <member name="M:BD.Hisense.Items.ItemExtCntroller.GetItemListByWorkgroupAndCreteria(System.Int32,BD.Items.ItemCriteria)">
+            <summary>
+            查询物料
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BD.Hisense.Items.ItemInEmployee">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.EmployeeIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.EmployeeId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.EmployeeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.Employee">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.UserIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.UserId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.UserProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.User">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.WorkGroupIdProperty">
+            <summary>
+            班组ID
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.WorkGroupId">
+            <summary>
+            班组ID
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.WorkGroupProperty">
+            <summary>
+            班组
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.WorkGroup">
+            <summary>
+            班组
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.ItemIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.ItemId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.ItemInEmployee.ItemProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.ItemInEmployee.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.ItemInEmployeeList">
+            <summary>
+             列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.ItemInEmployeeRepository">
+            <summary>
+             仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.ItemInEmployeeConfig">
+            <summary>
+             实体配置
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemInEmployeeController.GetByItemId(System.Int32)">
+            <summary>
+            根据物料Id查询实体
+            </summary>
+            <param name="itemId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemInEmployeeController.GetListByItemId(System.Int32)">
+            <summary>
+            根据物料Id查询实体
+            </summary>
+            <param name="itemId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemInEmployeeController.GetItemInEmployee(System.String,System.Int32)">
+            <summary>
+            验证仓管员权限
+            </summary>
+            <param name="itemCode"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Items.ItemInEmployeeController.DelItemInEmployee(BD.Hisense.Items.ItemInEmployee)">
+            <summary>
+            删除 ItemInEmployee
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BD.Hisense.Items.PasterItemConfig">
+            <summary>
+            贴片物料设置
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.PasterItemConfig.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.PasterItemConfigList">
+            <summary>
+             列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.PasterItemConfigRepository">
+            <summary>
+             仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.PasterItemConfigConfig">
+            <summary>
+             实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Items.PasterItemConfigCriteria">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.PasterItemConfigCriteria.Item">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Items.PasterItemConfigCriteria.ItemCodeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Items.PasterItemConfigCriteria.ItemCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.MailCategory.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.MailTitleConfigValue.TitleRule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.EMail">
+            <summary>
+            邮件
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.BillIdProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.BillId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.BillTypeProperty">
+            <summary>
+            单据类型
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.BillType">
+            <summary>
+            单据类型
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.SendByIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.SendById">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.SendByProperty">
+            <summary>
+            发件人
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.SendBy">
+            <summary>
+            发件人
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.TitleProperty">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.Title">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.ContentsProperty">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.Contents">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.StatusProperty">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.EMail.ErrorMsgProperty">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EMail.ErrorMsg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.EMailList">
+            <summary>
+            邮件 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.EMailRepository">
+            <summary>
+            邮件 仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.EMailConfig">
+            <summary>
+            邮件 实体配置
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Mails.EMailController.GetList(BD.Hisense.Mails.RecipientGroupCriteria)">
+            <summary>
+            查找收件组
+            </summary>
+            <param name="criteria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Mails.EMailController.GetRecipientGroup(System.Linq.Expressions.Expression{System.Func{BD.Hisense.Mails.RecipientGroup,System.Boolean}})">
+            <summary>
+            获取收件组对像
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BD.Hisense.Mails.EMailController.AddRecipientGroupMemberToGroup(System.Int32,System.Collections.Generic.IEnumerable{BD.Employees.Employee})">
+            <summary>
+            添加收件组成员
+            </summary>
+            <param name="RecipientGroupMembers"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BD.Hisense.Mails.EMailStatus">
+            <summary>
+            邮件发送状态
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.EmployeeForRecipientCriteria">
+            <summary>
+            收件组
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EmployeeForRecipientCriteria.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EmployeeForRecipientCriteria.Code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.EmployeeForRecipientCriteria.GroupId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.Recipient">
+            <summary>
+            收件人
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.EmployeeIdProperty">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.EmployeeId">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.EmployeeProperty">
+            <summary>
+            员工
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.Employee">
+            <summary>
+            员工
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.MailAddressProperty">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.MailAddress">
+            <summary>
+            邮件地址
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.RetryCountProperty">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.RetryCount">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.ErrorMsgProperty">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.ErrorMsg">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.StatusProperty">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.EMailIdProperty">
+            <summary>
+            邮件Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.EMailId">
+            <summary>
+            邮件Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.Recipient.EMailProperty">
+            <summary>
+            邮件
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.Recipient.EMail">
+            <summary>
+            邮件
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientList">
+            <summary>
+            收件人 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientRepository">
+            <summary>
+            收件人 仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientConfig">
+            <summary>
+            收件人 实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroup">
+            <summary>
+            收件组
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroup.CodeProperty">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroup.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroup.NameProperty">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroup.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroup.TitleProperty">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroup.Title">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroup.RemarksProperty">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroup.Remarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupList">
+            <summary>
+            收件组 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupRepository">
+            <summary>
+            收件组 仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupConfig">
+            <summary>
+            收件组 实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupCriteria">
+            <summary>
+            收件组
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroupCriteria.NameProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroupCriteria.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupMember">
+            <summary>
+            收件组成员
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroupMember.EmployeeIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroupMember.EmployeeId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroupMember.EmployeeProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroupMember.Employee">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroupMember.RecipientGroupIdProperty">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroupMember.RecipientGroupId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Mails.RecipientGroupMember.RecipientGroupProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Mails.RecipientGroupMember.RecipientGroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupMemberList">
+            <summary>
+            收件组成员 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientGroupMemberRepository">
+            <summary>
+            收件组成员 仓库
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Mails.RecipientgGroupMemberConfig">
+            <summary>
+            收件组成员 实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Sender.SenderLog">
+            <summary>
+            邮件发送日志
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.TypeProperty">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.SendFromProperty">
+            <summary>
+            发送来源
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.SendFrom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.SendToProperty">
+            <summary>
+            发送到
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.SendTo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.SendCcToProperty">
+            <summary>
+            抄送
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.SendCcTo">
+            <summary>
+            抄送
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.SendBccToProperty">
+            <summary>
+            秘送
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.SendBccTo">
+            <summary>
+            秘送
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.SubjectProperty">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.Subject">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.BodyProperty">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.Body">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.SendDateProperty">
+            <summary>
+            发送日期
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.SendDate">
+            <summary>
+            发送日期
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.ResultProperty">
+            <summary>
+            发送结果 
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.Result">
+            <summary>
+            发送结果
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderLog.ErrorInfoProperty">
+            <summary>
+            错误信息 
+            </summary>
+        </member>
+        <member name="P:BD.Hisense.Sender.SenderLog.ErrorInfo">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Sender.SenderLogList">
+            <summary>
+            邮件发送 列表
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Sender.SenderLogRepository">
+            <summary>
+            邮件发送 仓库
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Sender.SenderLogRepository.#ctor">
+            <summary>
+            单例模式，外界不可以直接构造本对象。
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Sender.SenderLogConfig">
+            <summary>
+            邮件发送 实体配置
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Sender.SenderLogController">
+            <summary>
+            发送邮件短信日志
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Sender.SenderLogController.AddLog(BD.Hisense.Sender.SenderLog)">
+            <summary>
+            添加邮件短信发送日志
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderType.MAIL">
+            <summary>
+            邮件
+            </summary>
+        </member>
+        <member name="F:BD.Hisense.Sender.SenderType.SMS">
+            <summary>
+            短信
+            </summary>
+        </member>
+        <member name="T:BD.Hisense.Templates.TemplateExtController">
+            <summary>
+            模板管理
+            </summary>
+        </member>
+        <member name="M:BD.Hisense.Templates.TemplateExtController.DelTemplate(BD.Templates.Template)">
+            <summary>
+            删除模板
+            </summary>
+            <param name="template"></param>
+            <returns></returns>
+        </member>
+        <member name="F:INV.Hisense.Items.ItemExt.EmployeeIdProperty">
+            <summary>
+            仓管员Id
+            </summary>
+        </member>
+        <member name="F:INV.Hisense.Items.ItemExt.EmployeeProperty">
+            <summary>
+            仓管员
+            </summary>
+        </member>
+        <member name="F:INV.Hisense.Items.ItemExt.PriceProperty">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="F:INV.Hisense.Items.ItemExt.ItemLabelTypeProperty">
+            <summary>
+            物料标签类型
+            </summary>
+        </member>
+        <member name="F:INV.Hisense.Items.ItemExt.ErpIdProperty">
+            <summary>
+            ErpId
+            </summary>
+        </member>
+        <member name="M:INV.Hisense.Items.ItemExt.GetIsMin(BD.Items.Item)">
+            <summary>
+            是否按最小包装数
+            </summary>
+        </member>
+        <member name="T:INV.Hisense.Items.ItemLabelType">
+            <summary>
+            标签类型
+            </summary>
+        </member>
+    </members>
+</doc>
